@@ -1,3 +1,21 @@
+# Live Page
+[Check out the live demo](https://hwanderlust.github.io/sparta-party/)
+
+# Notes
+* Responsive web design down to 320px (widths) and 1440px+ 
+* Layout created with CSS flexbox
+* SASS / SCSS for variables, nesting, mixins and imports 
+* Used React's context API to share common data among components in different sections of the tree
+* Utilized React Transition Group for a carousel of images to change every 5 seconds
+* Implemented basic touch-based manual slide of carousel
+* Basic custom pagination via spans, CSS and JS
+* Made with accessibility in mind allowing keyboard users to conveniently navigate the site
+* Used flexbox 'order' attribute to re-order HTML for a nicer design allowing screen-readers the proper context to read headings first prior to other info below it
+* **The design is not mine**
+* The images, data and text are not mine either
+* The menu / hamburger, links and buttons are meant not to work
+* Basic build provided by the create-react-app
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
