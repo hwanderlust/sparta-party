@@ -26,10 +26,6 @@ class Carousel extends Component {
     this.changeInterval();
   }
 
-  componentDidUpdate(prevProps, prevState) {
-    console.log(`updated`, this.state)
-  }
-
   componentWillUnmount() {
     clearInterval(this.state.intervalId);
   }
@@ -49,7 +45,9 @@ class Carousel extends Component {
           default:
             return
         }
-      }, () => console.log(`reset`, this.state))
+      }, () => {
+        // console.log(`reset`, this.state)
+      })
 
     }, 5000); 
 
@@ -60,15 +58,15 @@ class Carousel extends Component {
   
 
   handleClick = (e) => {
-    console.log('clicked')
+    // console.log('clicked')
     const pageNum = Number.parseInt(e.target.dataset.id);
-    console.log(pageNum);
+    // console.log(pageNum);
 
     this.handleSwitch(pageNum);
   }
 
   handleTouch = (id, direction) => {
-    console.log(`handletouch`, id, direction)
+    // console.log(`handletouch`, id, direction)
 
     switch(direction) { 
       case "forward":
@@ -93,7 +91,7 @@ class Carousel extends Component {
   }
 
   handleSwitch = (n, direction) => {
-    console.log(`handleswitch`, n)
+    // console.log(`handleswitch`, n)
 
     switch (n) {
       case 1:
@@ -120,7 +118,7 @@ class Carousel extends Component {
   }
 
   showSlide = (slide, caption, id, direction) => {
-    console.log(`showSlide`)
+    // console.log(`showSlide`)
 
     this.setState(prevState => {
       return { 

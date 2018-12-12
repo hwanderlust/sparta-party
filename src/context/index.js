@@ -12,7 +12,9 @@ export default class Store extends React.Component {
     this.setState({
       windowWidth: window.innerWidth,
       updateWidth: this.updateWidth
-    }, () => console.log(`store mounted update`, this.state))
+    }, () => {
+      // console.log(`store mounted update`, this.state)
+    })
   }
 
   updateWidth = (newWidth) => {
@@ -22,7 +24,9 @@ export default class Store extends React.Component {
           windowWidth: newWidth
         }
       }
-    }, () => console.log(`store updated`, this.state))
+    }, () => {
+      // console.log(`store updated`, this.state)
+    })
   }
 
   render() {

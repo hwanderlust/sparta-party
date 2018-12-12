@@ -27,10 +27,6 @@ class MasonryContainer extends Component {
     window.addEventListener('resize', this.updateWindowWidth)
   }
 
-  componentDidUpdate(prevProps, prevState) {
-    console.log(`update`, this.state)
-  }
-
   componentWillUnmount() {
     window.removeEventListener('resize', this.updateWindowWidth)
   }

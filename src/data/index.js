@@ -47,13 +47,3 @@ const jsonData = [
 ]
 
 export default jsonData;
-
-// const convertDateToString = (dateObj) => {
-
-//   const monthLookup = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-//   const month = monthLookup[dateObj.getMonth()];
-
-//   return `${month} ${dateObj.getDate()}, ${dateObj.getFullYear()}`;
-// }
-
-// console.log(convertDateToString(new Date("February 10, 2017")));

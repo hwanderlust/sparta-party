@@ -80,7 +80,9 @@ class ImageContainer extends React.Component {
       touchStartX: clientX,
       beingTouched: true,
       intervalId: null
-    }, () => console.log(this.state));
+    }, () => {
+      // console.log(this.state)
+    });
   }
 
   handleTouchStart = (e) => {
@@ -109,7 +111,9 @@ class ImageContainer extends React.Component {
         velocity,
         timeOfLastDragEvent: currTime,
         prevTouchX: clientX
-      }, () => console.log(this.state));
+      }, () => {
+        // console.log(this.state)
+      });
     }
   }
 
@@ -121,7 +125,9 @@ class ImageContainer extends React.Component {
       touchStartX: 0,
       beingTouched: false,
       intervalId: window.setInterval(this.handleMovement, 33),
-    }, () => console.log(this.state));
+    }, () => {
+      // console.log(this.state)
+    });
   }
 
   render() {
