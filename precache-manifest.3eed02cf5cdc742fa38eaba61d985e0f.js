@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/sparta-party/static/media/col1row1.ab28c3fe.jpg"
   },
   {
-    "revision": "72fe4ce7e3a5e485507d",
-    "url": "/sparta-party/static/css/main.67add2a9.chunk.css"
+    "revision": "7a351971c173688fe91e",
+    "url": "/sparta-party/static/css/main.8b077849.chunk.css"
   },
   {
     "revision": "54fb443974de59233c1b",
@@ -28,8 +28,8 @@ self.__precacheManifest = [
     "url": "/sparta-party/static/media/slide3.15238518.jpg"
   },
   {
-    "revision": "72fe4ce7e3a5e485507d",
-    "url": "/sparta-party/static/js/main.72fe4ce7.chunk.js"
+    "revision": "7a351971c173688fe91e",
+    "url": "/sparta-party/static/js/main.7a351971.chunk.js"
   },
   {
     "revision": "0ddb89632a026480545778bd6683e813",
@@ -52,7 +52,7 @@ self.__precacheManifest = [
     "url": "/sparta-party/static/media/col3row2.44fa105e.jpg"
   },
   {
-    "revision": "94c90f44de53d3270eba918a77e78eea",
+    "revision": "a3a9a483d5019471a655503e66914d75",
     "url": "/sparta-party/index.html"
   }
 ];

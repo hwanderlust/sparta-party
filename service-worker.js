@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/sparta-party/precache-manifest.d7a05a3e7c64970a70aeff239ed299e4.js"
+  "/sparta-party/precache-manifest.3eed02cf5cdc742fa38eaba61d985e0f.js"
 );
 
 workbox.clientsClaim();
