@@ -1,0 +1,9 @@
+@mixin primary-highlighting {
+  text-decoration: underline;
+}
+
+@mixin secondary-highlighting {
+  background-color: black;
+  color: white;
+  padding: 1rem;
+}

@@ -1,0 +1,21 @@
+@keyframes slideInLeft {
+  0% { 
+    display: inline-flex;
+    position: relative;
+    left: 100%; 
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    display: inline-flex;
+    position: relative;
+    left: -100%;
+  }
+  100% {
+    left: 0;
+  }
+}

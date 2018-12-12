@@ -1,0 +1,47 @@
+// side margins 
+$sides-spacing: 7.5rem;
+$md-sides-spacing: 2rem;
+$sm-sides-spacing: 1rem;
+
+// font families
+$springville: springville, serif;
+$adobe: adobe-caslon-pro, serif;
+$arial: Arial, Helvetica, sans-serif;
+
+// header
+$header-height: 5rem;
+$header-font: 11px;
+$sm-header-height: 50px;
+
+// carousel
+$carousel-lg-font: 60px;
+$carousel-md-font: 30px;
+$carousel-sm-font: 18px;
+
+$md-carousel-lg-font: 40px;
+$md-carousel-md-font: 20px;
+$md-carousel-sm-font: 10px;
+
+$sm-carousel-lg-font: 30px;
+$sm-carousel-md-font: 15px;
+$sm-carousel-sm-font: 10px;
+
+// masonry
+$masonry-col-gap: 2rem;
+$masonry-col-width: calc((100% - 4rem) / 3);
+$masonry-item-spacing: 3rem;
+$masonry-title-font: 3em;
+$masonry-details-font: 11px;
+$masonry-details-upcase: 14px;
+
+$md-masonry-item-spacing: 2rem;
+$md-masonry-col-width: calc((100% - 2rem) / 2);
+$md-masonry-title-font: 2em;
+
+$sm-masonry-col-gap: 1rem;
+$sm-masonry-item-spacing: 1rem;
+$sm-masonry-col-width: calc((100% - 1rem) / 2);
+$sm-masonry-title-font: 1.5em;
+
+// footer
+$footer-font: 11px;

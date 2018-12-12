@@ -1,0 +1,81 @@
+.carousel {
+  margin: 0;
+  margin-top: $header-height;
+  width: 100%;
+
+  .carousel__img-container {
+    width: 100%;
+    
+    .slideInLeft-enter {
+      animation-name: slideInLeft;
+      animation-duration: 1s;
+    }
+    .slideInLeft-exit {
+      display: none;
+    }
+
+    .slideInRight-enter {
+      animation-name: slideInRight;
+      animation-duration: 1s;
+    }
+    .slideInRight-exit {
+      display: none;
+    }
+  }
+
+  .carousel__img {
+    color: white;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 $sides-spacing;
+    margin: 0;
+    height: 30rem;
+    overflow: hidden;
+
+    .filler {
+      margin-bottom: 5rem;
+    }
+
+    .carousel__img__title {
+      font-family: $springville;
+      font-size: $carousel-lg-font;
+      margin: 0;
+    }
+
+    .carousel__img__date {
+      font-size: $carousel-md-font;
+      font-family: $adobe;
+      margin-top: 18px;
+    }
+
+    .carousel__img__details {
+      font-size: $carousel-sm-font; 
+      font-family: $adobe;
+    }
+  }
+
+  .carousel__pagination {
+    display: flex;
+    justify-content: center;
+    
+    .pagination {
+      margin: 0.4rem;
+      cursor: pointer;
+      width: 0.6rem;
+      height: 0.6rem;
+      background-color: #ccc;
+      border-radius: 50%;
+      margin-right: 1rem;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    .active {
+      background: black;
+    }
+  }
+}

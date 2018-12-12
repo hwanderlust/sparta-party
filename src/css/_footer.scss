@@ -1,0 +1,15 @@
+
+footer {
+  margin-top: 10rem;  
+  text-align: center;
+  font-size: $footer-font;
+  height: $header-height;
+
+  a {
+    border-bottom: 1px solid black;
+    text-transform: uppercase;
+  }
+  a:hover {
+    @include secondary-highlighting();
+  }
+}

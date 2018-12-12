@@ -1,0 +1,168 @@
+
+@media (min-width: 320px) and (max-width: 1000px) {
+  
+  .header {
+    height: $sm-header-height;
+    padding: 0 $md-sides-spacing;
+  }
+
+  .carousel {
+    margin-top: $sm-header-height;
+    
+    .carousel__img {
+      padding: 0 $md-sides-spacing;
+      
+      .carousel__img__date {
+        margin-top: 10px;
+      }
+    }
+  }
+
+  .masonry {
+    padding: 0 $md-sides-spacing;
+    margin-top: 2rem;
+    
+    .masonry__wrapper {
+
+      .masonry__column {
+        width: $md-masonry-col-width;
+      }
+  
+      .masonry__item {
+        margin-bottom: $md-masonry-item-spacing;
+  
+        .masonry__item-title {
+          font-size: $md-masonry-title-font;
+        }
+
+        .masonry__item-date {
+          margin-bottom: 1rem;
+        }
+  
+        .masonry__item-text {
+          margin-top: 1rem;
+          margin-bottom: $md-masonry-item-spacing;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .carousel__img-container {
+      max-width: 1440px;
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  .carousel {
+    
+    .carousel__img::before {
+      padding-top: 75%;
+   }
+  }
+
+  .masonry {
+    .masonry__wrapper {
+      .masonry__item {
+
+        .masonry__item-title {
+          font-size: $sm-masonry-title-font;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+
+  .header {
+    padding: 0 $sm-sides-spacing;
+    .header__left {
+      width: 80%;
+    }
+    .header__right {
+
+      span, button {
+        margin-right: 0.5rem;
+        padding: 0.5rem;
+      }
+    }
+  }
+
+  .carousel {
+    
+    .carousel__img {
+      padding: 0 $sm-sides-spacing;
+
+      .carousel__img__title {
+        font-size: $md-carousel-lg-font;
+      }
+
+      .carousel__img__date {
+        font-size: $md-carousel-md-font;
+      }
+
+      .carousel__img__details {
+        font-size: $md-carousel-sm-font;
+      }
+    }
+  }
+
+  .masonry {
+    margin-top: 1rem;
+    padding: 0 $sm-sides-spacing;
+    
+    .masonry__wrapper {
+      
+      .masonry__column {
+        width: $sm-masonry-col-width;
+        
+        .masonry__item {
+          margin-bottom: sm-masonry-item-spacing;
+
+          .masonry__item-date {
+            margin-bottom: 1rem;
+          }
+        }  
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .header {
+    .header__left {
+      width: 70%;
+    }
+    .header__right {
+
+      span, button {
+        padding: 0.10rem;
+      }
+    }
+  }
+
+   .masonry {
+    .masonry__wrapper {
+      .masonry__column {
+        .masonry__item {
+          .masonry__item-title {
+            font-size: 1.2rem;
+            font-weight: 550;
+          }
+        }
+      }
+    }
+  }
+
+
+}
