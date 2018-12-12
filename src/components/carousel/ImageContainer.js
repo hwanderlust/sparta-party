@@ -1,12 +1,9 @@
 import React from 'react';
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import Image from "./Image";
-import { storeCtx } from '../../context';
 
 
 class ImageContainer extends React.Component {
-  
-  static contextType = storeCtx.Consumer;
   
   state = {
     left: 0,

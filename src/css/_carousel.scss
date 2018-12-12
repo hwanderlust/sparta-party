@@ -26,39 +26,50 @@
   .carousel__img {
     color: white;
     max-width: 100%;
+    overflow: hidden;
+    margin: 0;
+    height: 30rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 $sides-spacing;
-    margin: 0;
-    height: 30rem;
-    overflow: hidden;
 
-    .filler {
-      margin-bottom: 5rem;
-    }
-
-    .carousel__img__title {
-      font-family: $springville;
-      font-size: $carousel-lg-font;
-      margin: 0;
-    }
-
-    .carousel__img__date {
-      font-size: $carousel-md-font;
-      font-family: $adobe;
-      margin-top: 18px;
-    }
-
-    .carousel__img__details {
-      font-size: $carousel-sm-font; 
-      font-family: $adobe;
+    .carousel__img__caption {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 $sides-spacing;
+      position: relative;
+      top: 18%;
+  
+      .filler {
+        margin-bottom: 5rem;
+      }
+  
+      .carousel__img__title {
+        font-family: $springville;
+        font-size: $carousel-lg-font;
+        margin: 0;
+        font-weight: 500;
+      }
+  
+      .carousel__img__date {
+        font-size: $carousel-md-font;
+        font-family: $adobe;
+        margin-top: 18px;
+      }
+  
+      .carousel__img__details {
+        font-size: $carousel-sm-font; 
+        font-family: $adobe;
+      }
     }
   }
 
   .carousel__pagination {
     display: flex;
     justify-content: center;
+    position: relative;
+    left: -0.2rem;
     
     .pagination {
       margin: 0.4rem;

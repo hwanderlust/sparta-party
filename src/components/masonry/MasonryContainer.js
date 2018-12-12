@@ -10,7 +10,7 @@ class MasonryContainer extends Component {
   static contextType = storeCtx.Consumer;
 
   state = {
-    windowWidthGreaterOrEqualTo930: false,
+    windowWidthGreaterOrEqualToBreakpoint: false,
     twoCols: {
       col1of2: [jsonData[0], jsonData[2], jsonData[4]],
       col2of2: [jsonData[1], jsonData[3], jsonData[5]],
@@ -38,15 +38,15 @@ class MasonryContainer extends Component {
     }
 
     this.setState(prevState => {
-      if(window.innerWidth >= breakpoint && !prevState.windowWidthGreaterOrEqualTo930) {
+      if(window.innerWidth >= breakpoint && !prevState.windowWidthGreaterOrEqualToBreakpoint) {
         return {
-          windowWidthGreaterOrEqualTo930: true
+          windowWidthGreaterOrEqualToBreakpoint: true
         }
       }
 
-      if(window.innerWidth < breakpoint && prevState.windowWidthGreaterOrEqualTo930) {
+      if(window.innerWidth < breakpoint && prevState.windowWidthGreaterOrEqualToBreakpoint) {
         return {
-          windowWidthGreaterOrEqualTo930: false
+          windowWidthGreaterOrEqualToBreakpoint: false
         }
       }
     })
@@ -58,16 +58,16 @@ class MasonryContainer extends Component {
         <div className='masonry__wrapper'>
           
           {
-            this.state.windowWidthGreaterOrEqualTo930 ? (
+            this.state.windowWidthGreaterOrEqualToBreakpoint ? (
               <>
-                <MasonryColumn items={this.state.threeCols.col1of3} colNum='1' />
-                <MasonryColumn items={this.state.threeCols.col2of3} colNum='2' />
-                <MasonryColumn items={this.state.threeCols.col3of3} colNum='3' />
+                <MasonryColumn items={this.state.threeCols.col1of3} colNum='1' threeCols={this.state.windowWidthGreaterOrEqualToBreakpoint} />
+                <MasonryColumn items={this.state.threeCols.col2of3} colNum='2' threeCols={this.state.windowWidthGreaterOrEqualToBreakpoint} />
+                <MasonryColumn items={this.state.threeCols.col3of3} colNum='3' threeCols={this.state.windowWidthGreaterOrEqualToBreakpoint}/>
               </>
             ) : (
               <>
-                <MasonryColumn items={this.state.twoCols.col1of2} colNum='1' />
-                <MasonryColumn items={this.state.twoCols.col2of2} colNum='2' />
+                <MasonryColumn items={this.state.twoCols.col1of2} colNum='1' threeCols={this.state.windowWidthGreaterOrEqualToBreakpoint} />
+                <MasonryColumn items={this.state.twoCols.col2of2} colNum='2' threeCols={this.state.windowWidthGreaterOrEqualToBreakpoint}/>
               </>
             ) 
           }

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import slide1 from '../images/hero-panel.jpg';
 import slide1 from '../../images/slide1.jpg';
 import slide2 from '../../images/slide2.jpg';
 import slide3 from '../../images/slide3.jpg';
@@ -7,9 +6,9 @@ import ImageContainer from './ImageContainer';
 import Pagination from './Pagination';
 
 const captions = [
-  {heading: "Screening DVF Secret Agent Part 2", date: "October 15, 2017", subtext: "Join us for a private screening of DVF Secret Agent Part 2 with our special guest, director, Peter Lindberg."},
-  {heading: "Screening DVF Secret Agent Part 1", date: "October 8, 2018", subtext: "If you missed the private screening, check out Part 2"},
-  {heading: "Screening After Party", date: "October 16, 2017", subtext: "Celebrate the screening's success with your favorite director Peter Lindberg."},
+  {type: "Screening:", title: "DVF Secret Agent Part 2", date: "October 15, 2017", subtext: "Join us for a private screening of DVF Secret Agent Part 2 with our special guest, director, Peter Lindberg."},
+  {type: "Screening:", title: "DVF Secret Agent Part 1", date: "October 8, 2018", subtext: "If you missed the private screening, check out Part 2"},
+  {type: "Screening:", title: "After Party", date: "October 16, 2017", subtext: "Celebrate the screening's success with your favorite director Peter Lindberg."},
 ]
 
 class Carousel extends Component {

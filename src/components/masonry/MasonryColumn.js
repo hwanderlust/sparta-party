@@ -2,14 +2,14 @@ import React from 'react';
 import MasonryItem from "./MasonryItem";
 
 
-const MasonryColumn = ({ items, colNum }) => {
+const MasonryColumn = ({ items, colNum, threeCols }) => {
 
   return (
     <div className={`masonry__column ${colNum}`}>
 
       {items.map((item, idx) => (
 
-        <MasonryItem key={item.pic} item={item} idx={manageTabIdx(colNum, idx)} />
+        <MasonryItem key={item.pic} item={item} idx={manageTabIdx(colNum, idx, threeCols)} />
       
         ))}
 
@@ -18,37 +18,80 @@ const MasonryColumn = ({ items, colNum }) => {
 };
 
 
-const manageTabIdx = (colNum, idx) => {
+const manageTabIdx = (colNum, idx, threeCols) => {
 
-  if (colNum === "1") {
-    switch (idx) {
-      case 0:
-        return 4
-      case 1:
-        return 10
-        // return 6
-      case 2:
-        return 16
-        // return 8
-      default:
-        return
-    }
-  }
+  switch(threeCols) {
+    case true:
+      if (colNum === "1") {
+        switch (idx) {
+          case 0:
+            return 4
+          case 1:
+            return 13
+          case 2:
+            return 22
+          default:
+            return
+        }
+      }
 
-  if (colNum === "2") {
-    switch (idx) {
-      case 0:
-        return 7
-        // return 5
-      case 1:
-        return 13
-        // return 7
-      case 2:
-        return 19
-        // return 9
-      default:
-        return
-    }
+      if (colNum === "2") {
+        switch (idx) {
+          case 0:
+            return 7
+          case 1:
+            return 16
+          case 2:
+            return 25
+          default:
+            return
+        }
+      }
+
+      if (colNum === "3") {
+        switch (idx) {
+          case 0:
+            return 10
+          case 1:
+            return 19
+          case 2:
+            return 28
+          default:
+            return
+        }
+      }
+      return
+
+    case false:
+      if (colNum === "1") {
+        switch (idx) {
+          case 0:
+            return 4
+          case 1:
+            return 10
+          case 2:
+            return 16
+          default:
+            return
+        }
+      }
+
+      if (colNum === "2") {
+        switch (idx) {
+          case 0:
+            return 7
+          case 1:
+            return 13
+          case 2:
+            return 19
+          default:
+            return
+        }
+      }
+      return
+
+    default: 
+      return
   }
 }
 
